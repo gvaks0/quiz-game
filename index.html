@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#132e43">
-  <title>互動問答挑戰</title>
+  <title>解謎領紅包</title>
   <style>
     :root{font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;color:#152c3d;background:#eef3f7}
     *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:20px}
@@ -27,8 +27,8 @@
 </head>
 <body>
   <main>
-    <span class="tag">免費互動問答</span>
-    <h1>知識闖關挑戰</h1>
+    <span class="tag">解謎領紅包</span>
+    <h1>闖關挑戰</h1>
     <p class="sub">答對才能繼續，答錯可無限重試！</p>
     <section id="quiz">
       <div class="top"><strong id="number"></strong><span id="attempts"></span></div>
@@ -48,9 +48,9 @@
   <script>
     // 只要修改這裡，就可以換成自己的題目。answer 為正確選項索引，從 0 開始。
     const questions = [
-      {question:"台灣最高的山是哪一座？", options:["雪山","玉山","合歡山","阿里山"], answer:1},
-      {question:"下列哪一個是台灣的首都？", options:["高雄","台中","臺北","台南"], answer:2},
-      {question:"一星期有幾天？", options:["5 天","6 天","7 天","8 天"], answer:2}
+      {question:"爸爸的出生年月日？", options:["1969.1.1","1972.11.26","1980.12.27","1982.11.26"], answer:3},
+      {question:"爸爸最喜歡吃的東西？", options:["豆腐鍋","燒烤","滷味","牛排"], answer:2},
+      {question:"天下最漂亮的人是誰？", options:["李多慧","野原美冴","冰雪奇緣艾莎","媽媽"], answer:4}
     ];
 
     const $ = id => document.getElementById(id);
